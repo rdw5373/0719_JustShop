@@ -30,4 +30,20 @@ $(function(){
     }
     // 슬라이드쇼 끝
 
+
+    // 멀티탭 시작
+
+        //탭버튼,탭콘텐츠 시작
+    $("#bbs button").click(function(){
+        $("#bbs button").removeClass("selected");
+        $(this).addClass("selected");
+
+        var dataLink =$(this).attr("data-link");
+        $("#bbs .tabContents").css({"display": "none"});
+        $("#" + dataLink).css({"display": "block"});
+    });
+        //탭버튼,탭콘텐츠 시작
+
+    // 멀티탭 끝
+
 });
