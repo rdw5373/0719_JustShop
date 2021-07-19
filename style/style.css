@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+/* Reset 시작 */
+* {
+  color: #333;
+  /* 기본텍스트 색 */
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  /* 배경색 */
+}
+
+a:link {
+  color: #555;
+}
+
+a:visited {
+  color: #555;
+}
+
+a:hover {
+  color: #666;
+}
+
+a:active {
+  color: #666;
+}
+
+img {
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex-container {
+  display: flex;
+}
+
+/* Reset 끝 */
+
+/* div#wrap 시작 */
+div#wrap {
+  width: 1200px;
+  border: 1px solid #000;
+  margin: 0 auto;
+}
+
+div#wrap > * {
+  border: 1px solid #000;
+}
+
+/* div#wrap 끝 */
+
+/* header#header 시작 */
+header#header {
+  height: 100px;
+  /*border: 1px solid #000;*/
+
+  justify-content: space-between;
+}
+
+#header > div#headerLogo {
+  height: 100px;
+  line-height: 100px;
+}
+
+/* nav#gnb */
+#header #gnb {
+  width: 620px;
+
+  /* border: 1px solid #08f; */
+  margin-right: 20px;
+}
+
+#header #gnb ul#mainMenu {
+  height: 100px;
+  /* border: 1px solid #f80; */
+
+  align-items: center;
+}
+
+#header #gnb a {
+  width: 150px;
+  height: 40px;
+  font-size: 17px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #ccc;
+
+  display: inline-block;
+}
+
+#header #gnb ul.subMenu {
+  background-color: rgba(255, 255, 255, 0.9);
+  display: none;
+
+  position: absolute;
+  z-index: 1;
+}
+
+#header .mainLi:hover > a,
+#header .subLi > a:hover {
+  color: #fff;
+  font-weight: bold;
+  background-color: #08f;
+}
+
+/* nav#gnb */
+
+/* header#header 시작 */
+
+/* div#slide */
+div#slide {
+  height: 300px;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+
+#slide a {
+  width: 1200px;
+  height: 300px;
+
+  /* border: 1px solid #f00; */
+
+  display: inline-block;
+  position: relative;
+}
+
+#slide span {
+  color: #08f;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  border: 4px solid #aaa;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.85);
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* div#slide */
+
+/* div#contents */
+div#contents {
+  height: 200px;
+  border: 1px solid #000;
+}
+
+/* div#contents */
+
+/* footer#footer */
+footer#footer {
+  height: 100px;
+  border: 1px solid #000;
+}
+
+/* footer#footer */
