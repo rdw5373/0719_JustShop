@@ -12,7 +12,7 @@
 
 body {
   background-color: #fff;
-  /* 배경색 */
+  /* 기본배경색 */
 }
 
 a:link {
@@ -43,17 +43,27 @@ ul {
   display: flex;
 }
 
+header,
+nav,
+main,
+footer,
+section,
+article,
+aside {
+  display: block;
+}
+
 /* Reset 끝 */
 
 /* div#wrap 시작 */
 div#wrap {
   width: 1200px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   margin: 0 auto;
 }
 
 div#wrap > * {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 
 /* div#wrap 끝 */
@@ -119,7 +129,7 @@ header#header {
 /* div#slide */
 div#slide {
   height: 300px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   overflow: hidden;
 }
 
@@ -151,14 +161,16 @@ div#slide {
 /* div#slide */
 
 /* div#contents */
+
+/* div#bbs시작 */
 div#contents {
   height: 200px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 
 #contents > div {
   padding: 4px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   margin: 4px;
 
   flex: 1;
@@ -190,6 +202,9 @@ div#contents {
 #contents #bbs div#bbsNotice {
   /* display: none; */
 }
+#contents #bbs div#bbsNotice td {
+  padding-left: 6px;
+}
 #contents #bbs div#bbsGallery {
   display: none;
 }
@@ -204,16 +219,93 @@ div#contents {
   /* border: 1px solid #08f; */
 }
 #contents #bbs table td {
-  /* line-height: 32px; */
   /* border: 1px solid #08f; */
 }
+/* div#bbs끝 */
+
+/* div#banner, div#shortcut시작 */
+div#banner {
+  text-align: center;
+}
+div#shortcut {
+  text-align: center;
+}
+/* div#banner, div#shortcut 끝 */
 
 /* div#contents */
 
 /* footer#footer */
 footer#footer {
   height: 100px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
+}
+footer > div {
+  height: 200px;
+  /* border: 1px solid #000; */
+  height: 100px;
+  line-height: 100px;
+}
+
+#footer div#footerLogo {
+  width: 200px;
+}
+#footer div#copyright {
+  font-size: 20px;
+  text-align: center;
+
+  flex: 1;
+}
+#footer div#snsArea {
+  width: 200px;
+  text-align: center;
 }
 
 /* footer#footer */
+
+/* 레이어팝업 시작 */
+tr#popupPoint {
+  cursor: pointer;
+}
+
+div#layerBG {
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(255, 255, 255, 0);
+
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+div#layerPopup {
+  padding: 20px 60px;
+  border: 4px solid #aaa;
+  border-radius: 10px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#layerBG h1 {
+  margin: 20px;
+}
+#layerBG p {
+  font-size: 1.2em;
+  line-height: 1.8em;
+}
+#closeBtnArea {
+  text-align: right;
+  margin: 20px 20px 10px;
+}
+#layerBG button {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 2px 20px;
+
+  cursor: pointer;
+}
+/* 레이어팝업 끝 */

@@ -46,4 +46,17 @@ $(function(){
 
     // 멀티탭 끝
 
+
+    // 레이어팝업 시작
+    $("tr#popupPoint").click(function(){
+        $("div#layerBG").css({"display": "block"});
+    });
+            // 레이어팝업 나타나기
+
+    $("div#closeBtnArea>button").click(function(){
+        $("div#layerBG").css({"display": "none"});
+    });
+            // 레이어팝업 닫기
+    // 레이어팝업 끝
+
 });
